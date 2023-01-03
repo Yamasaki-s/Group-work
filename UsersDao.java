@@ -18,7 +18,7 @@ public class UsersDao {
 		try {
 			Context initialContext = new InitialContext();
 			Context envContext = (Context) initialContext.lookup("java:/comp/env");
-			DataSource dataSource = (DataSource) envContext.lookup("jdbc/masq2");
+			DataSource dataSource = (DataSource) envContext.lookup("jdbc/masq");
 			
 			try (Connection connection = dataSource.getConnection()) {
 				
