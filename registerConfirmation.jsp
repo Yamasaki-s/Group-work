@@ -4,7 +4,7 @@
 
 <%@ page 
   language="java" 
-	contentType="text/html; charset=UTF-8"
+  contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
   
  <%@ include file="/WEB-INF/jspHeader.jsp" %>
@@ -14,18 +14,12 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<link href="${pageContext.request.contextPath}/static/css/header_bottom_style.css" rel="stylesheet">
-<link rel="icon" href="${pageContext.request.contextPath}/static/img/favicon.ico">
-<script src="https://kit.fontawesome.com/6e46f1a97e.js" crossorigin="anonymous"></script>
-
 <title>会員登録確認画面</title>
 </head>
 
 <body>
-	<header>
-		<jsp:include page="/WEB-INF/pageHeader.jsp"/>
-	</header>
-	<h1>会員登録確認画面</h1>
+	
+<h1>会員登録確認画面</h1>
 	<form action="${pageContext.request.contextPath}/public/RegisterCompleteServlet" method="post">
 	
 		<table class="input-table">
@@ -91,15 +85,15 @@
 				</td>
 			</tr>
 			<tr>
-        <td colspan="2" class="form-title">
-					<button type="submit" name="action" value="back">修正する</button>
+        	<td colspan="2" class="form-title">
+			    <button type="submit" name="action" value="back">修正する</button>
 			    <button type="submit" name="action" value="register" id="submit-button">登録する</button>
 			  </td>
 			</tr>
 		</table>
 		
 		<%-- 送信用データ、画面に表示されない --%>
-   	<%-- 隠し要素 --%>
+   	        <%-- 隠し要素 --%>
 		<input type="hidden" name="id"                value="<c:out value="${usersForm.id}" />">
 		<input type="hidden" name="name"              value="<c:out value="${usersForm.name}" />">
 		<input type="hidden" name="password"            value="<c:out value="${usersForm.password}" />">
