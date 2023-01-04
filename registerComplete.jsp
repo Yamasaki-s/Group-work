@@ -1,6 +1,6 @@
 <%@ page 
-	language="java" 
-	contentType="text/html; charset=UTF-8"
+  language="java" 
+  contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"
 %>
     
@@ -13,9 +13,6 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="refresh" content="3; url = ${pageContext.request.contextPath}/index.jsp" />
-<link href="${pageContext.request.contextPath}/static/css/header_bottom_style.css" rel="stylesheet">
-<link rel="icon" href="${pageContext.request.contextPath}/static/img/favicon.ico">
-<script src="https://kit.fontawesome.com/6e46f1a97e.js" crossorigin="anonymous"></script>
 <title>会員登録完了</title>
 </head>
 
