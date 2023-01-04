@@ -10,22 +10,13 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<link href="${pageContext.request.contextPath}/static/css/header_bottom_style.css" rel="stylesheet">
-<link rel="icon" href="${pageContext.request.contextPath}/static/img/favicon.ico">
-<script src="https://kit.fontawesome.com/6e46f1a97e.js" crossorigin="anonymous"></script>
-
 <title>会員登録入力</title>
-
-
 </head>
 
 <body>
-	<header>
-		<jsp:include page="/WEB-INF/pageHeader.jsp" />
-	</header>
-	<h1>マッチングサービス 会員登録</h1>
-	
-	<div class="message">
+<h1>マッチングサービス 会員登録</h1>
+
+<div class="message">
   <c:forEach var="message" items="${messageList}">
     <c:out value="${message}"/><br>
   </c:forEach>
@@ -92,7 +83,7 @@
 			</tr>
 		</table>
 
-		<button type="submit" name="action" value="register" id="submit-button">確認画面へ</button>
+	<button type="submit" name="action" value="register" id="submit-button">確認画面へ</button>
 	</form>
 
 </body>
