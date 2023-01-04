@@ -85,7 +85,7 @@
 				</td>
 			</tr>
 			<tr>
-        	<td colspan="2" class="form-title">
+        		<td colspan="2" class="form-title">
 			    <button type="submit" name="action" value="back">修正する</button>
 			    <button type="submit" name="action" value="register" id="submit-button">登録する</button>
 			  </td>
