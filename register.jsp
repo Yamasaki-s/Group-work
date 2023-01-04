@@ -1,7 +1,7 @@
 <%@ page 
   language="java" 
   contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+  pageEncoding="UTF-8"%>
 
 <%@ include file="/WEB-INF/jspHeader.jsp"%>
 
@@ -46,8 +46,7 @@
 						<c:if test="${usersForm.gender == gender.key}">
 							<c:set var="checkedString" value="checked='checked'" />
 						</c:if>
-						<label><input type="radio" name="gender"
-							value="${gender.key}" ${checkedString}>${gender.value}</label>
+						<label><input type="radio" name="gender" value="${gender.key}" ${checkedString}>${gender.value}</label>
 					</c:forEach></td>
 			</tr>
 			<tr>
