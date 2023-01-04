@@ -76,8 +76,7 @@
 					<c:set var="checkedString" value="checked='checked'" />
 					</c:if>
 					<label><input type="radio" name="activity" value="${activity.key}" ${checkedString}>${activity.value}</label>
-			    </c:forEach>
-			</td>
+			    </c:forEach></td>
 		</tr>
     	</table>
 		<button type="submit" name="action" value="register" id="submit-button">確認画面へ</button>
